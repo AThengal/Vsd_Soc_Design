@@ -1,17 +1,18 @@
 
-# Project Name
+# VSD-SOC-DESIGN-PROGRAM
 
 ## Description
-Provide a brief explanation of your project. Mention what it does and its purpose.
+Transforming bare RTL netlist to final tapeout
 
 ## Features
-- Highlight the main features of your project.
-- List any key functionalities or benefits.
+- Open Source Toolchain for RTL2GDS
+- ASIC DESIGN FLOW
 
-## Installation
-Explain how to install and set up your project locally.
+## 1. Session 1: Open Source Tools
 
 ```bash
 # Example of a command to install the project
 git clone https://github.com/username/project-name.git
 cd project-name
+
+![Homescreen](assets/screen1.png)
