@@ -9,11 +9,11 @@ Transforming bare RTL netlist to final tapeout
 - ASIC DESIGN FLOW
 
 ## 1. Session 1: Open Source Tools
-
+![Application Screenshot](assets/screen1.png)
 ```bash
 # Example of a command to install the project
 git clone https://github.com/username/project-name.git
 cd project-name
 
-![Application Screenshot](assets/screen1.png)
+
 
