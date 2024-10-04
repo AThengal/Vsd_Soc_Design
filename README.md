@@ -22,6 +22,7 @@ bash-4.2$ ./flow.tcl -interactive
 % package require openlane
 % prep -design picorv32a
 % run_synthesis
+```
 
 ![picorv32a](assets/screen3.png)
 ![Synthesis successful](assets/screen4.png)
