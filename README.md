@@ -43,7 +43,7 @@ Run floorplan
 ![Floorplan successful](assets/screen6.png)
 
 
-#Calculate the Die area of the floorplan
+# Calculate the Die area of the floorplan
 
 # Change directory to path containing generated floorplan def
 ```bash
@@ -64,7 +64,17 @@ magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs
 % placement
 ```
 ![Layout Magic](assets/screen10.png)
-![Layout Magic](assets/screen11.png)
+![Layout Magic floorplan](assets/screen11.png)
+
+# Command to load the placement def in magic tool
+```bash
+# Change directory to path containing generated placement def
+cd Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/17-03_12-06/results/placement/
+
+# Command to load the placement def in magic tool
+magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.placement.def &
+```
+![Layout Magic Placement](assets/screen12.png)
 
 
 ## Session 3: Designing Library Cell
