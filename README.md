@@ -15,4 +15,5 @@ Transforming bare RTL netlist to final tapeout
 git clone https://github.com/username/project-name.git
 cd project-name
 
-![Homescreen](assets/screen1.png)
+![Application Screenshot](assets/screen1.png)
+
