@@ -34,6 +34,39 @@ flop ratio =(total no. of d flop realised) / (total no. cells)
 
 
 ## Session 2: Good vs Bad Floorplanning
+
+Run floorplan
+```bash
+% run_floorplan
+```
+![Floorplan Run](assets/screen5.png)
+![Floorplan successful](assets/screen6.png)
+
+
+#Calculate the Die area of the floorplan
+
+# Change directory to path containing generated floorplan def
+```bash
+cd ~/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/04-10_15-44/tmp/floorplan
+```
+![Floorplan dir](assets/screen7.png)
+![Floorplan def file](assets/screen8.png)
+
+
+# Command to load the floorplan def in magic tool
+```bash
+magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.floorplan.def &
+```
+![Floorplan load def file](assets/screen9.png)
+
+# Command to run placement
+```bash
+% placement
+```
+![Layout Magic](assets/screen10.png)
+![Layout Magic](assets/screen11.png)
+
+
 ## Session 3: Designing Library Cell
 ## Session 4: Pre-Layout timing analysis
 ## Session 5: RTL2GDS using TritonROUTE and OpenSTA
