@@ -147,6 +147,34 @@ Fall cell delay = Time taken for output to fall to 50% - Time taken by input to 
 Fall cell delay = 4.07−4.05 = 0.02ns = 20ps
 ```
 
+### Find problem in the DRC section of the old magic tech file for the skywater process and fix them
+```bash
+# Change to home directory
+cd
+
+# Command to download the lab files
+wget http://opencircuitdesign.com/open_pdks/archive/drc_tests.tgz
+
+# Since lab file is compressed command to extract it
+tar xfz drc_tests.tgz
+
+# Change directory into the lab folder
+cd drc_tests
+
+# List all files and directories present in the current directory
+ls -al
+
+# Command to view .magicrc file
+gvim .magicrc
+
+# Command to open magic tool in better graphics
+magic -d XR &
+```
+![gvim](assets/screen19.png)
+
+![rc file](assets/screen20.png)
+
+
 ## Session 4: Pre-Layout timing analysis
 ## Session 5: RTL2GDS using TritonROUTE and OpenSTA
 
