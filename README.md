@@ -43,9 +43,12 @@ Run floorplan
 ![Floorplan successful](assets/screen6.png)
 
 
-# Calculate the Die area of the floorplan
+### Calculate the Die area of the floorplan
+Die width= 660.685 microns
+Die height= 671.405 microns 
+Die Area = Die width *Die height = 660.685 * 671.405 = 443587.212 Square microns
 
-# Change directory to path containing generated floorplan def
+### Change directory to path containing generated floorplan def
 ```bash
 cd ~/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/04-10_15-44/tmp/floorplan
 ```
@@ -53,20 +56,20 @@ cd ~/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/04-
 ![Floorplan def file](assets/screen8.png)
 
 
-# Command to load the floorplan def in magic tool
+### Command to load the floorplan def in magic tool
 ```bash
 magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.floorplan.def &
 ```
 ![Floorplan load def file](assets/screen9.png)
 
-# Command to run placement
+### Command to run placement
 ```bash
 % placement
 ```
 ![Layout Magic](assets/screen10.png)
 ![Layout Magic floorplan](assets/screen11.png)
 
-# Command to load the placement def in magic tool
+### Command to load the placement def in magic tool
 ```bash
 # Change directory to path containing generated placement def
 cd Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/17-03_12-06/results/placement/
