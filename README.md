@@ -129,8 +129,23 @@ ext2spice
 
 ![ngspice plot](assets/screen18.png)
 
+### Rise Time and Fall Time calulation
+```markdown
+Rise Transition time  = time taken for output rise to 80% - time taken for output rise to 20%
+80 % of output = 2.64 V
+20 % of output = 0.66 V
+Rise Transition time = 2.24638−2.18242 = 0.06396ns  = 63.96ps
 
+Fall Transition time = 4.0955−4.0536 = 0.0419ns = 41.9ps
+```
+### Rise cell delay and Fall cell delay calulation
+```markdown
+Rise cell delay = Time taken for output to rise to 50% - Time taken by input to fall to 50%
+Rise cell delay = 2.21144−2.15008 = 0.06136ns = 61.36ps
 
+Fall cell delay = Time taken for output to fall to 50% - Time taken by input to rise to 50%
+Fall cell delay = 4.07−4.05 = 0.02ns = 20ps
+```
 
 ## Session 4: Pre-Layout timing analysis
 ## Session 5: RTL2GDS using TritonROUTE and OpenSTA
