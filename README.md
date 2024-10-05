@@ -51,9 +51,11 @@ cd ~/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/04-
 ![Floorplan def file](assets/screen8.png)
 
 ### Calculate the Die area of the floorplan
--Die width= 660.685 microns
--Die height= 671.405 microns 
--Die Area = Die width *Die height = 660.685 * 671.405 = 443587.212 Square microns
+```markdown
+Die width= 660.685 microns
+Die height= 671.405 microns 
+Die Area = Die width *Die height = 660.685 * 671.405 = 443587.212 Square microns
+```
 
 ### Command to load the floorplan def in magic tool
 ```bash
