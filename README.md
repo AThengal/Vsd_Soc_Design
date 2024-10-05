@@ -80,6 +80,56 @@ magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs
 
 
 ## Session 3: Designing Library Cell
+
+### Clone custom inverter standard cell design from github repository
+```bash
+# Change directory to openlane
+cd Desktop/work/tools/openlane_working_dir/openlane
+
+# Clone the repository with custom inverter design
+git clone https://github.com/nickson-jose/vsdstdcelldesign
+
+# Change into repository directory
+cd vsdstdcelldesign
+
+# Copy magic tech file to the repo directory for easy access
+cp /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech .
+
+# Check contents whether everything is present
+ls
+
+# Command to open custom inverter layout in magic
+magic -T sky130A.tech sky130_inv.mag &
+```
+![git repo](assets/screen13.png)
+![Inverter Magic](assets/screen14.png)
+
+###  Spice extraction of inverter in magic.
+```bash
+# Check current directory
+pwd
+
+# Extraction command to extract to .ext format
+extract all
+
+# Before converting ext to spice this command enable the parasitic extraction also
+ext2spice cthresh 0 rthresh 0
+
+# Converting to ext to spice
+ext2spice
+```
+
+![export spice](assets/screen15.png)
+
+![Inverter spice](assets/screen16.png)
+
+![Edited spice](assets/screen17.png)
+
+![ngspice plot](assets/screen18.png)
+
+
+
+
 ## Session 4: Pre-Layout timing analysis
 ## Session 5: RTL2GDS using TritonROUTE and OpenSTA
 
